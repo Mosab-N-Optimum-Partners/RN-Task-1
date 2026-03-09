@@ -1,6 +1,11 @@
 {
   "expo": {
     "name": "Task-1",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "backgroundColor": "#2D4A47",
+      "resizeMode": "contain"
+    },
     "slug": "Task-1",
     "version": "1.0.0",
     "orientation": "default",
@@ -9,10 +14,20 @@
     "newArchEnabled": true,
     "scheme": "task1",
     "ios": {
+      "splash": {
+        "image": "./assets/splash-icon.png",
+        "backgroundColor": "#2D4A47",
+        "resizeMode": "native"
+      },
       "supportsTablet": true,
       "bundleIdentifier": "com.task1"
     },
     "android": {
+      "splash": {
+        "image": "./assets/splash-icon.png",
+        "backgroundColor": "#2D4A47",
+        "resizeMode": "native"
+      },
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
@@ -27,10 +42,17 @@
       [
         "expo-splash-screen",
         {
-          "backgroundColor": "#ffffff",
-          "image": "./assets/splash-icon.png"
+          "backgroundColor": "#2D4A47",
+          "image": "./assets/splash-icon.png",
+          "resizeMode": "cover"
         }
-      ]
-    ]
+      ],
+      "expo-font"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "8ed33e2a-66a5-4a91-b3fa-f0df8ebc5559"
+      }
+    }
   }
 }

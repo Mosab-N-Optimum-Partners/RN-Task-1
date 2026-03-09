@@ -1,11 +1,14 @@
-import { Text, Button } from '@react-navigation/elements';
-import { StyleSheet, View } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
+import { Pressable, StyleSheet, View, Text } from 'react-native';
 
 export function NotFound() {
+  const navigation = useNavigation<any>()
   return (
-    <View style={styles.container}>
+    <View style={ styles.container }>
       <Text>404</Text>
-      <Button screen="HomeTabs">Go to Home</Button>
+      <Pressable onPress={ () => navigation.navigate('HomeTabs') }>
+        <Text>Go to Home</Text>
+      </Pressable>
     </View>
   );
 }
